@@ -1,0 +1,18 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/client">
+
+        <CheckBoxPreference
+                android:id="@+id/show_splash"
+                android:key="showSplash"
+                android:title="@string/show_splash"
+                android:summary="@string/show_splash_summary" />
+        <PreferenceScreen
+                android:id="@+id/splash_path"
+                android:key="splashPath"
+                android:defaultValue="@string/default_splash_path"
+                android:title="@string/splash_path"
+                android:dependency="showSplash"
+                android:layout="?android:attr/preferenceLayoutChild" />
+    </PreferenceCategory>
+</PreferenceScreen>

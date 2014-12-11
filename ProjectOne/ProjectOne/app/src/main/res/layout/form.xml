@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="User Name"
+
+        />
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:onClick="sendFeedback"
+        />
+
+
+</LinearLayout>

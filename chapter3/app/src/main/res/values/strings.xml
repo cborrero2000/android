@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slava Bulgaria ResumeService</string>
+    <string name="text_main">Select an option</string>
+    <string name="text_alert_description">this is the main view for travel alerts.</string>
+    <string name="text_atom_description">Travel news</string>
+    <string name="name">user name</string>
+    <string name="password">password</string>
+
+    <string-array name="main_menu_items">
+        <item>Travel Alerts</item>
+        <item>Travel News</item>
+    </string-array>
+    <string-array name="alert_activity_options">
+        <item>AlertFeed</item>
+        <item>Slava Bulgaria ResumeService</item>
+    </string-array>
+    <string-array name="atom_activity_options">
+        <item>Govt Travel News</item>
+        <item>Commercial Travel News</item>
+    </string-array>
+
+</resources>

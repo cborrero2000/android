@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/calender"
+		android:icon="@drawable/ic_launcher"
+		android:showAsAction="collapseActionView"
+		android:textSize="2sp"
+		android:title="Calender" />
+
+
+</menu><!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/menu/form_menu.xml -->

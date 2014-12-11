@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+		android:id="@+id/menu_form"
+		android:icon="@drawable/ic_launcher"
+		android:showAsAction="collapseActionView"
+		android:title="Form"
+		android:textSize="2sp"/>
+    
+    <item
+		android:id="@+id/menu_launch"
+		android:icon="@drawable/ic_launcher"
+		android:showAsAction="collapseActionView"
+		android:title="Calander"
+		android:textSize="2sp"/>
+
+</menu><!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/menu/entry_point_menu.xml -->

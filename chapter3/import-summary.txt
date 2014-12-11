@@ -1,0 +1,117 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\libraries\
+* .idea\libraries\Maven__com_google_android_android_4_1_1_4.xml
+* .idea\libraries\Maven__com_google_code_android_rome_feed_reader_android_rome_feed_reader_1_0_0_r2.xml
+* .idea\libraries\Maven__com_google_code_gson_gson_2_2_1.xml
+* .idea\libraries\Maven__commons_codec_commons_codec_1_3.xml
+* .idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml
+* .idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_0_1.xml
+* .idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_0_1.xml
+* .idea\libraries\Maven__org_codehaus_jackson_jackson_core_asl_1_9_7.xml
+* .idea\libraries\Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_7.xml
+* .idea\libraries\Maven__org_jdom_jdom_1_1_1_android_fork.xml
+* .idea\libraries\Maven__org_json_json_20080701.xml
+* .idea\libraries\Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml
+* .idea\libraries\Maven__org_simpleframework_simple_xml_2_6_2.xml
+* .idea\libraries\Maven__org_springframework_android_spring_android_auth_1_0_1_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_android_spring_android_core_1_0_1_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_android_spring_android_rest_template_1_0_1_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_security_spring_security_crypto_3_1_0_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_social_spring_social_core_1_0_2_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_social_spring_social_facebook_1_0_1_RELEASE.xml
+* .idea\libraries\Maven__org_springframework_social_spring_social_twitter_1_0_2_RELEASE.xml
+* .idea\libraries\Maven__xerces_xmlParserAPIs_2_6_2.xml
+* .idea\libraries\Maven__xpp3_xpp3_1_1_4c.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* README.md
+* ant.properties
+* build.xml
+* chapter-3.iml
+* pom.xml
+* proguard-project.txt
+* target\
+* target\chapter-3.ap_
+* target\chapter-3.apk
+* target\chapter-3.jar
+* target\classes.dex
+* target\classes\
+* target\classes\com\
+* target\classes\com\japp\
+* target\classes\com\japp\dev1\
+* target\classes\com\japp\dev1\AlertActivity$1.class
+* target\classes\com\japp\dev1\AlertActivity.class
+* target\classes\com\japp\dev1\BuildConfig.class
+* target\classes\com\japp\dev1\MainActivity$1.class
+* target\classes\com\japp\dev1\MainActivity.class
+* target\classes\com\japp\dev1\R$array.class
+* target\classes\com\japp\dev1\R$attr.class
+* target\classes\com\japp\dev1\R$drawable.class
+* target\classes\com\japp\dev1\R$id.class
+* target\classes\com\japp\dev1\R$layout.class
+* target\classes\com\japp\dev1\R$menu.class
+* target\classes\com\japp\dev1\R$string.class
+* target\classes\com\japp\dev1\R.class
+* target\classes\com\japp\dev1\SyndFeedListAdapter$1.class
+* target\classes\com\japp\dev1\SyndFeedListAdapter$ImageGetter.class
+* target\classes\com\japp\dev1\SyndFeedListAdapter.class
+* target\classes\com\japp\dev1\TravelNewsActivity$1.class
+* target\classes\com\japp\dev1\TravelNewsActivity$DownloadAtomFeedTask.class
+* target\classes\com\japp\dev1\TravelNewsActivity.class
+* target\generated-sources\
+* target\generated-sources\r\
+* target\generated-sources\r\com\
+* target\generated-sources\r\com\japp\
+* target\generated-sources\r\com\japp\dev1\
+* target\generated-sources\r\com\japp\dev1\BuildConfig.java
+* target\generated-sources\r\com\japp\dev1\R.java
+* target\maven-archiver\
+* target\maven-archiver\pom.properties
+* target\maven-status\
+* target\maven-status\maven-compiler-plugin\
+* target\maven-status\maven-compiler-plugin\compile\
+* target\maven-status\maven-compiler-plugin\compile\default-compile\
+* target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

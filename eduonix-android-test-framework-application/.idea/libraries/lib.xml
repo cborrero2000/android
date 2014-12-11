@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/eduonix-gradle/lib/espresso-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/eduonix-gradle/lib/testrunner-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/eduonix-gradle/lib/testrunner-runtime-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

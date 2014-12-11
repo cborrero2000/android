@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="alert_activity_options">
+        <item>AlertFeed</item>
+        <item>Slava Bulgaria ResumeService</item>
+    </string-array>
+    <string-array name="atom_activity_options">
+        <item>Govt Travel News</item>
+        <item>Commercial Travel News</item>
+    </string-array>
+    <string-array name="main_menu_items">
+        <item>Travel Alerts</item>
+        <item>Travel News</item>
+    </string-array>
+    <string name="app_name">Slava Bulgaria ResumeService</string>
+    <!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/values/urls.xml -->
+    <eat-comment/>
+    <string name="atom_feed_istanbul">http://www.wnyc.org/feeds/tags/istanbul</string>
+    <string name="atom_feed_turkey">http://www.wnyc.org/feeds/tags/turkey</string>
+    <!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="name">user name</string>
+    <string name="password">password</string>
+    <!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/values/urls.xml -->
+    <eat-comment/>
+    <string name="rss_feed_url">http://blog.springsource.org/feed/rss/</string>
+    <!-- From: file:/C:/Users/carlos/Documents/Udemy/Projects_in_Android/chapter3/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="text_alert_description">this is the main view for travel alerts.</string>
+    <string name="text_atom_description">Travel news</string>
+    <string name="text_main">Select an option</string>
+</resources>

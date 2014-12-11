@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SplashScreen" >
+
+    <item android:icon="@drawable/ic_launcher"
+        android:id="@+id/menu_form"
+        android:title="@string/action_form"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView" />
+
+    <item android:icon="@drawable/ic_launcher"
+        android:id="@+id/menu_calendar"
+        android:title="@string/action_calendar"
+        android:orderInCategory="100"
+        android:showAsAction="collapseActionView" />
+</menu>

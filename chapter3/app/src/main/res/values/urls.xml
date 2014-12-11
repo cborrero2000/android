@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rss_feed_url">http://blog.springsource.org/feed/rss/</string>
+    <string name="atom_feed_istanbul">http://www.wnyc.org/feeds/tags/istanbul</string>
+    <string name="atom_feed_turkey">http://www.wnyc.org/feeds/tags/turkey</string>
+
+
+</resources>

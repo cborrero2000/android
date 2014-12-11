@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Carlos App Project</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="title">
+        <item>Meme 1</item>
+        <item>Meme 2</item>
+        <item>Meme 3</item>
+        <item>Meme 4</item>
+        <item>Meme 5</item>
+        <item>Meme 6</item>
+        <item>Meme 7</item>
+        <item>Meme 8</item>
+        <item>Meme 9</item>
+        <item>Meme 10</item>
+        <item>Meme 11</item>
+        <item>Meme 12</item>
+        <item>Meme 13</item>
+        <item>Meme 14</item>
+        <item>Meme 15</item>
+        <item>Meme 16</item>
+        <item>Meme 17</item>
+        <item>Meme 18</item>
+        <item>Meme 19</item>
+        <item>Meme 20</item>
+        <item>Meme 21</item>
+        <item>Meme 22</item>
+        <item>Meme 23</item>
+        <item>Meme 24</item>
+        <item>Meme 25</item>
+        <item>Meme 26</item>
+        <item>Meme 27</item>
+        <item>Meme 28</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>This is description 1</item>
+        <item>This is description 2</item>
+        <item>This is description 3</item>
+        <item>This is description 4</item>
+        <item>This is description 5</item>
+        <item>This is description 6</item>
+        <item>This is description 7</item>
+        <item>This is description 8</item>
+        <item>This is description 9</item>
+        <item>This is description 10</item>
+        <item>This is description 11</item>
+        <item>This is description 12</item>
+        <item>This is description 13</item>
+        <item>This is description 14</item>
+        <item>This is description 15</item>
+        <item>This is description 16</item>
+        <item>This is description 17</item>
+        <item>This is description 18</item>
+        <item>This is description 19</item>
+        <item>This is description 20</item>
+        <item>This is description 21</item>
+        <item>This is description 22</item>
+        <item>This is description 23</item>
+        <item>This is description 24</item>
+        <item>This is description 25</item>
+        <item>This is description 26</item>
+        <item>This is description 27</item>
+        <item>This is description 28</item>
+    </string-array>
+
+</resources>
