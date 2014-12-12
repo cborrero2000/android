@@ -1,10 +1,11 @@
-package com.example.carlosappproject;
+package com.example.carlosappprojectviewholder;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 //import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,28 +59,51 @@ class CarlosAdapter extends ArrayAdapter<String> {
         this.desc = description;
     }
 
-    //LayoutInflater inflater = getLayoutInflater(); Only works inside of Activities
 
+    class MyViewHolder{
+
+        ImageView memeImage;
+        TextView title;
+        TextView description;
+
+        MyViewHolder(View view){
+
+            memeImage = (ImageView) view.findViewById(R.id.imageView);
+            title = (TextView) view.findViewById(R.id.textView);
+            description = (TextView) view.findViewById(R.id.textView2);
+        }
+
+    }
+
+    //LayoutInflater inflater = getLayoutInflater(); Only works inside of Activities
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
     View row = convertView;
+    MyViewHolder holder = null;
 
     if(row == null) {
         // works outside of the activity
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         row = inflater.inflate(R.layout.single_row, parent, false);
+
+        holder = new MyViewHolder(row);
+        row.setTag(holder);
+        Log.d("CB", "Creating a new row");
+
+    }else{
+        holder = (MyViewHolder)row.getTag();
+        Log.d("CB", "Recycling rows");
     }
 
-        ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
-        TextView myTitle = (TextView) row.findViewById(R.id.textView);
-        TextView myDescription = (TextView) row.findViewById(R.id.textView2);
+        //ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
+        //TextView myTitle = (TextView) row.findViewById(R.id.textView);
+        //TextView myDescription = (TextView) row.findViewById(R.id.textView2);
 
-        myImage.setImageResource(images[position]);
-        myTitle.setText(titles[position]);
-        myDescription.setText(desc[position]);
-
+        holder.memeImage.setImageResource(images[position]);
+        holder.title.setText(titles[position]);
+        holder.description.setText(desc[position]);
 
         return row; // you want to return an object that matches the parent
     }
