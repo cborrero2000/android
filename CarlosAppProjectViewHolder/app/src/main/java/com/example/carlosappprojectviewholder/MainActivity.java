@@ -17,15 +17,12 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 public class MainActivity extends Activity {
 
     String[] memeTitles;
     String[] memeDescriptions;
-    //int[] images = {R.drawable.meme1, R.drawable.meme2,R.drawable.meme3,R.drawable.meme4,R.drawable.meme5,R.drawable.meme6,R.drawable.meme7,R.drawable.meme8,R.drawable.meme9,R.drawable.meme10,R.drawable.meme11,R.drawable.meme12,R.drawable.meme13,R.drawable.meme14,R.drawable.meme15};
     int[] images = {R.drawable.meme1, R.drawable.meme2,R.drawable.meme3,R.drawable.meme4,R.drawable.meme5,R.drawable.meme6,R.drawable.meme7,R.drawable.meme8,R.drawable.meme9,R.drawable.meme10,R.drawable.meme11,R.drawable.meme12,R.drawable.meme13,R.drawable.meme14,R.drawable.meme15,
             R.drawable.meme16, R.drawable.meme17,R.drawable.meme18,R.drawable.meme19,R.drawable.meme20,R.drawable.meme21,R.drawable.meme22,R.drawable.meme23,R.drawable.meme24,R.drawable.meme25,R.drawable.meme26,R.drawable.meme27,R.drawable.meme28};
-
 
     ListView listView;
 
@@ -58,7 +55,6 @@ class CarlosAdapter extends ArrayAdapter<String> {
         this.titles = titles;
         this.desc = description;
     }
-
 
     class MyViewHolder{
 
@@ -96,7 +92,6 @@ class CarlosAdapter extends ArrayAdapter<String> {
         holder = (MyViewHolder)row.getTag();
         Log.d("CB", "Recycling rows");
     }
-
         //ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
         //TextView myTitle = (TextView) row.findViewById(R.id.textView);
         //TextView myDescription = (TextView) row.findViewById(R.id.textView2);
@@ -107,12 +102,4 @@ class CarlosAdapter extends ArrayAdapter<String> {
 
         return row; // you want to return an object that matches the parent
     }
-
-
-
-
-
-
-
-
 }
