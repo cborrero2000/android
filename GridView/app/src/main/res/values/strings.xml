@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="country_names">
+        <item>Bolivia</item>
+        <item>Canada</item>
+        <item>Czech</item>
+        <item>England</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Israel</item>
+        <item>Mexico</item>
+        <item>Paraguay</item>
+        <item>Russia</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Uruguay</item>
+        <item>US</item>
+        <item>Venezuela</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string name="title_activity_my_dialog">MyDialog</string>
+
+</resources>
