@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpinnerTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name ="menu">
+        <item>Chicken</item>
+        <item>Turkey</item>
+        <item>Filet Mignon</item>
+        <item>Lamb</item>
+        <item>Salmon</item>
+        <item>Tuna</item>
+        <item>Trout</item>
+        <item>Kefir</item>
+        <item>Bananas</item>
+    </string-array>
+
+</resources>
