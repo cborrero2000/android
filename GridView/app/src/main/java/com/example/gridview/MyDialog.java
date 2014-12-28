@@ -26,11 +26,8 @@ public class MyDialog extends Activity {
             imageView.setImageResource(countryImage);
 
             TextView textView = (TextView) findViewById(R.id.textView);
-            textView.setText("This flag belongs to " + countryName);
+            textView.setText(countryName);
         }
-
-
-
     }
 
     public void closeDialog(View view){

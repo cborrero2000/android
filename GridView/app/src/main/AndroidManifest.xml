@@ -18,10 +18,8 @@
         </activity>
         <activity
             android:theme="@android:style/Theme.Dialog"
-
             android:name=".MyDialog"
             android:label="@string/title_activity_my_dialog"
-
             >
         </activity>
     </application>
