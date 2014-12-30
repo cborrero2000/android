@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.activitylifecycle" >
+    package="com.example.buttons" >
 
     <application
         android:allowBackup="true"
@@ -15,16 +15,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MyDialog"
-            android:label="@string/title_activity_my_dialog"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity
-            android:configChanges="orientation|screenSize"
-            android:name=".MyDialog2"
-            android:label="@string/title_activity_my_dialog2" >
         </activity>
     </application>
 
