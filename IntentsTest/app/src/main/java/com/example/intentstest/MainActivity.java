@@ -32,6 +32,10 @@ public class MainActivity extends ActionBarActivity {
             startActivity(chooser);
 
         } else if (view.getId() == R.id.launchMarket) {
+            intent = new Intent(android.content.Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("market://details?id=dolphin.developers.com"));
+            chooser = Intent.createChooser(intent, "Launch Market");
+            startActivity(chooser);
 
         } else if (view.getId() == R.id.sendEmail) {
 
