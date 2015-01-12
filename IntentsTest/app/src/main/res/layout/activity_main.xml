@@ -9,42 +9,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/launchMap"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="#FFCC00"
-        android:onClick="process"
-        android:text="@string/launch_map"/>
+        android:layout_alignParentTop="true">
 
-    <Button
-        android:id="@+id/launchMarket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/launchMap"
-        android:layout_alignRight="@id/launchMap"
-        android:layout_below="@id/launchMap"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="#FFCC00"
-        android:onClick="process"
-        android:text="@string/launch_market"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/sendEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/launchMap"
-        android:layout_alignRight="@id/launchMap"
-        android:layout_below="@id/launchMarket"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="#FFCC00"
-        android:onClick="process"
-        android:text="@string/send_email"/>
+            <Button
+                android:id="@+id/launchMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFCC00"
+                android:onClick="process"
+                android:text="@string/launch_map" />
+
+            <Button
+                android:id="@+id/launchMarket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFCC00"
+                android:onClick="process"
+                android:text="@string/launch_market" />
+
+            <Button
+                android:id="@+id/sendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFCC00"
+                android:onClick="process"
+                android:text="@string/send_email" />
+
+            <Button
+                android:id="@+id/sendImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFCC00"
+                android:onClick="process"
+                android:text="@string/send_image" />
+
+            <Button
+                android:id="@+id/sendImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFCC00"
+                android:onClick="process"
+                android:text="@string/send_images" />
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
