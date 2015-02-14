@@ -64,6 +64,14 @@ public class FragmentA extends Fragment implements View.OnClickListener{
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        if (savedInstanceState == null) {
+            counter = 0;
+        } else {
+            counter = savedInstanceState.getInt("counter", 0);
+        }
+
+
     }
 
     @Override
@@ -125,5 +133,12 @@ public class FragmentA extends Fragment implements View.OnClickListener{
         button = (Button) getActivity().findViewById(R.id.button);
         comm = (Communicator)getActivity();
         button.setOnClickListener(this);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("counter", counter);
+
     }
 }
