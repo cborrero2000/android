@@ -1,26 +1,25 @@
-package com.example.interfragmentcomm;
+package com.example.flexibleuifragments;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-import java.util.zip.Inflater;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link FragmentA.OnFragmentInteractionListener} interface
+ * {@link FragmentB.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link FragmentA#newInstance} factory method to
+ * Use the {@link FragmentB#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentA extends Fragment implements View.OnClickListener{
+public class FragmentB extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,10 +29,10 @@ public class FragmentA extends Fragment implements View.OnClickListener{
     private String mParam1;
     private String mParam2;
 
+    private TextView textView;
+    private int index;
+
     private OnFragmentInteractionListener mListener;
-    private Button button;
-    private int counter = 0;
-    private Communicator comm;
 
     /**
      * Use this factory method to create a new instance of
@@ -41,11 +40,11 @@ public class FragmentA extends Fragment implements View.OnClickListener{
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentA.
+     * @return A new instance of fragment FragmentB.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentA newInstance(String param1, String param2) {
-        FragmentA fragment = new FragmentA();
+    public static FragmentB newInstance(String param1, String param2) {
+        FragmentB fragment = new FragmentB();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -53,7 +52,7 @@ public class FragmentA extends Fragment implements View.OnClickListener{
         return fragment;
     }
 
-    public FragmentA() {
+    public FragmentB() {
         // Required empty public constructor
     }
 
@@ -64,21 +63,23 @@ public class FragmentA extends Fragment implements View.OnClickListener{
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-        if (savedInstanceState == null) {
-            counter = 0;
-        } else {
-            counter = savedInstanceState.getInt("counter", 0);
-        }
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_a, container, false);
+        View view = inflater.inflate(R.layout.fragment_b, container, false);
+
+        if (savedInstanceState != null) {
+            TextView text = (TextView) view.findViewById(R.id.textView);
+            index = savedInstanceState.getInt("index");
+            Resources res = getResources();
+            String[] description = res.getStringArray(R.array.descriptions);
+            text.setText(description[index]);
+        }
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -105,12 +106,6 @@ public class FragmentA extends Fragment implements View.OnClickListener{
         mListener = null;
     }
 
-    @Override
-    public void onClick(View v) {
-        counter++;
-        comm.respond("The button was clicked " + counter + " times");
-    }
-
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -129,15 +124,19 @@ public class FragmentA extends Fragment implements View.OnClickListener{
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        textView = (TextView) getActivity().findViewById(R.id.textView);
+    }
 
-        button = (Button) getActivity().findViewById(R.id.button);
-        comm = (Communicator)getActivity();
-        button.setOnClickListener(this);
+    public void changeData(int index){
+        Resources res = getResources();
+        String[] description = res.getStringArray(R.array.descriptions);
+        textView.setText(description[index]);
+        this.index = index;
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("counter", counter);
+        outState.putInt("index", index);
     }
 }
